@@ -1,0 +1,333 @@
+/**************/
+/* COMMONDEFS */
+/**************/
+
+h1
+{
+	font-size: 40px;
+	line-height: 53px;
+}
+
+h2
+{
+	font-size: 27px;
+	line-height: 37px;
+	letter-spacing: -0.07em;
+}
+
+p
+{
+	font-size: 14px;
+	line-height: 27px;
+}
+
+/* text appearance manipulation */
+.uppercase
+{
+	text-transform: uppercase
+}
+
+.no-underline
+{
+	text-decoration: none;
+}
+/* font types */
+.serif
+{
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.sans-serif
+{
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.button /* general appearance of buttons; some buttons may override this */
+{
+	background: #E3B873;
+	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+	border-radius: 2px;
+	display: inline-block;
+}
+/* text colours */
+.color-beige
+{
+	color: #E3B873;
+}
+
+.color-white
+{
+	color: #FFFFFF;
+}
+
+.color-fadedwhite
+{
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.sectiondata /* for containers holding the data in a given section */
+{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+.header-bg
+{	
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 90%;
+	background: #131313;
+}
+
+.header-textline /* horizontally: 18% title, 45% navbar, 10% phone, 12% call button, 15% in the three margins between */
+{
+	position: absolute;
+	left: 6.3%;
+	right: 6.3%;
+	top: 28%;
+	bottom: 28%;
+}
+
+.header-title
+{
+	position: absolute;
+	left: 0%;
+	right: 82%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.header-nav-bar
+{
+	position: absolute;
+	left: 23%;
+	right: 32%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.header-nav-list
+{
+	list-style-type: none;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.header-phone
+{
+	position: absolute;
+	left: 73%;
+	right: 17%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.header-contact
+{
+	position: absolute;
+	left: 88%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+  	width: 12%;
+}
+
+.header-text /* this is also sort of a commondef, but it only affects headers so I left it here with header data, sue me I guess */
+{
+	padding: 10px;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+}
+
+/*****************/
+/* SECTION: HOME */
+/*****************/
+
+.home
+{
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 10%;
+	bottom: 0%;
+	height: 100%;
+}
+
+.home-bg
+{
+	width: 100%;
+}
+
+.home-bg-darken
+{
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	background: rgba(0,0,0,0.7);
+}
+
+.home-container
+{
+	position: absolute;
+	left: 6%;
+	right: 6%;
+	top: 25%;
+	bottom: 25%;
+}
+
+.home-heading
+{
+	position: absolute;
+	left: 1.5%;
+	right: 60%;
+	top: 12%;
+	bottom: 60%;
+	margin: 0 auto;
+}
+
+.home-paragraph
+{
+	position: absolute;
+	left: 1.5%;
+	right: 60%;
+	top: 40%;
+	bottom: 30%;
+	margin: 0 auto;
+
+	font-size: 22px;
+	line-height: 36px;
+}
+
+.home-button1
+{
+	position: absolute;
+	left: 1.5%;
+	right: 78.5%;
+	top: 75%;
+	bottom: 10%;
+	width: 20%;
+}
+
+.home-button2
+{
+	position: absolute;
+	left: 23%;
+	right: 57%;
+	top: 75%;
+	bottom: 10%;
+	width: 20%;
+
+  	background: none; /* this section overrides the typical button appearance defined in .button */
+	box-shadow: none;
+	border: 1px solid #FFFFFF;
+	border-radius: 2px;
+	display: inline-block;
+}
+
+.home-text
+{
+	padding: 10px;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+}
+
+/*********************/
+/* SECTION: PROJECTS */
+/*********************/
+
+.projects
+{
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 110%;
+	bottom: 0%;
+	height: 100%;
+
+	background: #131313;
+}
+
+.projects-container
+{
+	position: absolute;
+	left: 6%;
+	right: 6%;
+	top: 15%;
+	bottom: 7%;
+}
+
+.projects-locationlist
+{
+	position: absolute;
+	left: 40%;
+	right: 0%;
+	top: 0%;
+	bottom: 90%;
+
+	list-style-type: none;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.projects-imageholder
+{
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 10%;
+	bottom: 0%;
+}
+
+.projects-image
+{
+	position: absolute;
+	left: 40%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+
+.projects-container-general
+{
+	position: absolute;
+	left: 0%;
+	right: 65%;
+	top: 0%;
+	bottom: 10%;
+}
+
+.projects-heading
+{
+	position: absolute;
+	left: 0%;
+	right: 50%;
+	top: 0%;
+	bottom: 80%;
+}
+
+.projects-paragraph
+{
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 20%;
+	bottom: 50%;
+}
